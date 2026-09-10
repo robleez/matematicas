@@ -21,8 +21,7 @@ const GUIAS = [
 
         previews: [
             "assets/previews/algebra-limites-01/preview-1.png",
-            "assets/previews/algebra-limites-01/preview-2.png",
-            "assets/previews/algebra-limites-01/preview-3.png"
+            "assets/previews/algebra-limites-01/preview-2.png"
         ],
 
         nuevo: true
