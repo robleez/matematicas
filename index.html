@@ -3,18 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mis Matemáticas</title>
 </head>
 
 <body>
 
-    <h1>📚 Mis Matemáticas</h1>
+    <header>
+        <h1>📚 Mis Matemáticas</h1>
 
-    <p>Lobby de prueba</p>
+        <p>
+            Escoge una guía para comenzar a estudiar.
+        </p>
+    </header>
 
-    <a href="guias/algebra-limites-01.html">
-        <button>Abrir Álgebra y Límites</button>
-    </a>
+
+    <main>
+
+        <section id="lista-guias">
+            <!--
+            Las tarjetas aparecerán aquí automáticamente.
+            No tienes que escribirlas manualmente.
+            -->
+        </section>
+
+    </main>
+
+
+    <!-- IMPORTANTE:
+         catalogo.js debe cargarse primero.
+    -->
+    <script src="assets/js/catalogo.js"></script>
+
+    <!-- Después se carga lobby.js -->
+    <script src="assets/js/lobby.js"></script>
 
 </body>
 </html>
