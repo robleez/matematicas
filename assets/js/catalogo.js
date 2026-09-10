@@ -2,9 +2,9 @@ const GUIAS = [
     {
         id: "algebra-limites-01",
 
-        titulo: "Álgebra y Límites",
+        titulo: "2.3 HW - Techniques for Computing Limits",
 
-        subtitulo: "Guía visual de estudio",
+        subtitulo: "Álgebra y Límites",
 
         archivo: "guias/algebra-limites-01.html",
 
