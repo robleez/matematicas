@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eef3f8;
+    color: #26384a;
+}
+
+header {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: clamp(34px, 6vw, 60px);
+    color: #17385e;
+}
+
+header p {
+    margin-top: 12px;
+    color: #6c7d90;
+    font-size: 18px;
+}
+
+main {
+    width: min(1200px, calc(100% - 30px));
+    margin: auto;
+    padding-bottom: 80px;
+}
+
+#lista-guias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 22px;
+}
+
+.guia-card {
+    background: white;
+    border: 1px solid #dce7f1;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 12px 35px rgba(20, 50, 80, 0.08);
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.guia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 45px rgba(20, 50, 80, 0.14);
+}
+
+.categoria {
+    margin: 0 0 8px;
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #4288bd;
+}
+
+.guia-card h2 {
+    margin: 0;
+    color: #17385e;
+    font-size: 27px;
+}
+
+.subtitulo {
+    color: #6c7d90;
+    line-height: 1.5;
+}
+
+.temas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 20px 0;
+}
+
+.temas span {
+    background: #edf5fb;
+    color: #315b86;
+    border-radius: 999px;
+    padding: 7px 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.guia-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 18px;
+    border-top: 1px solid #e2ebf3;
+}
+
+.guia-footer > span {
+    color: #6c7d90;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.btn-estudiar {
+    text-decoration: none;
+    background: #173f6b;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 12px;
+    font-weight: 800;
+    transition: background 0.2s ease;
+}
+
+.btn-estudiar:hover {
+    background: #275f91;
+}
+
+.badge-nuevo {
+    position: absolute;
+    right: 18px;
+    top: 18px;
+    background: #dff6e8;
+    color: #23754b;
+    border-radius: 999px;
+    padding: 6px 10px;
+    font-size: 10px;
+    font-weight: 900;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding-top: 35px;
+    }
+
+    main {
+        width: min(100% - 16px, 1200px);
+    }
+
+    .guia-card {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .guia-footer {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .btn-estudiar {
+        text-align: center;
+    }
+}
