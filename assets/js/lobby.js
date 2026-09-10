@@ -9,20 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-
     GUIAS.forEach((guia) => {
 
         const tarjeta = document.createElement("article");
         tarjeta.className = "guia-card";
 
-
-        // TEMAS
         const temas = guia.temas
             .map(tema => `<span>${tema}</span>`)
             .join("");
 
-
-        // IMÁGENES DE EJEMPLO
         let previews = "";
 
         if (guia.previews && guia.previews.length > 0) {
@@ -52,7 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             `;
         }
-
 
         tarjeta.innerHTML = `
 
@@ -87,10 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         ${guia.problemas} problemas
                     </span>
 
-                    <a
-                        href="${guia.archivo}"
-                        class="btn-estudiar"
-                    >
+                    <a href="${guia.archivo}" class="btn-estudiar">
                         Estudiar →
                     </a>
 
@@ -98,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             </div>
         `;
-
 
         contenedor.appendChild(tarjeta);
 
