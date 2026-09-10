@@ -154,3 +154,126 @@ main {
         text-align: center;
     }
 }
+
+/* =========================
+   PREVIEWS DE LAS GUÍAS
+   ========================= */
+
+.preview-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 7px;
+
+    height: 190px;
+
+    margin: -25px -25px 22px -25px;
+
+    padding: 8px;
+
+    background: #e8eff6;
+
+    border-radius: 24px 24px 16px 16px;
+
+    overflow: hidden;
+}
+
+
+.preview-item {
+    min-width: 0;
+    height: 100%;
+
+    overflow: hidden;
+
+    background: white;
+
+    border-radius: 13px;
+
+    border: 1px solid #dce7f1;
+}
+
+
+.preview-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.35s ease;
+}
+
+
+.guia-card:hover .preview-item img {
+    transform: scale(1.04);
+}
+
+
+/* Cuando todavía no existen imágenes */
+
+.preview-vacio {
+    height: 190px;
+
+    margin: -25px -25px 22px -25px;
+
+    border-radius: 24px 24px 16px 16px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf5ff,
+            #f3efff
+        );
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+
+    font-size: 40px;
+}
+
+
+.preview-vacio span {
+    font-size: 13px;
+    font-weight: 800;
+
+    color: #6c7d90;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .preview-grid {
+        height: 160px;
+
+        margin:
+            -20px
+            -20px
+            18px
+            -20px;
+
+        border-radius:
+            20px
+            20px
+            14px
+            14px;
+    }
+
+
+    .preview-vacio {
+        height: 160px;
+
+        margin:
+            -20px
+            -20px
+            18px
+            -20px;
+    }
+
+}
