@@ -277,3 +277,225 @@ main {
     }
 
 }
+
+/* =========================================
+   BUSCADOR Y FILTROS
+   ========================================= */
+
+.controles-lobby {
+    margin-bottom: 30px;
+}
+
+
+.buscador-box {
+    position: relative;
+
+    max-width: 720px;
+
+    margin: 0 auto 22px;
+}
+
+
+.buscador-icono {
+    position: absolute;
+
+    left: 17px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 18px;
+
+    pointer-events: none;
+}
+
+
+#buscar-guias {
+    width: 100%;
+
+    padding: 16px 18px 16px 49px;
+
+    border: 1px solid #d6e2ed;
+
+    border-radius: 17px;
+
+    background: white;
+
+    color: #17385e;
+
+    font-size: 16px;
+
+    outline: none;
+
+    box-shadow:
+        0 7px 22px
+        rgba(20, 50, 80, 0.06);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+#buscar-guias:focus {
+    border-color: #6da7d3;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(80, 150, 205, 0.12);
+}
+
+
+#buscar-guias::placeholder {
+    color: #8798a9;
+}
+
+
+/* Categorías */
+
+.filtros-categorias {
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.filtro-btn {
+    border: 1px solid #d6e2ed;
+
+    background: white;
+
+    color: #526a82;
+
+    border-radius: 999px;
+
+    padding: 9px 15px;
+
+    font-weight: 800;
+
+    cursor: pointer;
+
+    transition: 0.18s ease;
+}
+
+
+.filtro-btn:hover {
+    background: #edf5fb;
+
+    color: #173f6b;
+}
+
+
+.filtro-btn.activo {
+    background: #173f6b;
+
+    border-color: #173f6b;
+
+    color: white;
+
+    box-shadow:
+        0 5px 15px
+        rgba(23, 63, 107, 0.18);
+}
+
+
+.resultado-info {
+    text-align: center;
+
+    color: #718397;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin: 13px 0 0;
+}
+
+
+/* Sin resultados */
+
+.estado-vacio {
+    grid-column: 1 / -1;
+
+    min-height: 240px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    gap: 8px;
+
+    background: white;
+
+    border: 1px dashed #cad9e6;
+
+    border-radius: 24px;
+
+    color: #718397;
+}
+
+
+.estado-vacio strong {
+    color: #17385e;
+
+    font-size: 20px;
+}
+
+
+.estado-vacio-icono {
+    font-size: 36px;
+
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 600px) {
+
+    .controles-lobby {
+        margin-bottom: 22px;
+    }
+
+
+    #buscar-guias {
+        padding-top: 14px;
+        padding-bottom: 14px;
+
+        border-radius: 15px;
+
+        font-size: 15px;
+    }
+
+
+    .filtros-categorias {
+        justify-content: flex-start;
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        padding: 2px 2px 8px;
+
+        scrollbar-width: none;
+    }
+
+
+    .filtros-categorias::-webkit-scrollbar {
+        display: none;
+    }
+
+
+    .filtro-btn {
+        flex: none;
+    }
+
+}
