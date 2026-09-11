@@ -20,16 +20,35 @@
     </header>
 
 
-    <main>
+<main>
 
-        <section id="lista-guias">
-            <!--
-            Las tarjetas aparecerán aquí automáticamente.
-            No tienes que escribirlas manualmente.
-            -->
-        </section>
+    <section class="controles-lobby">
 
-    </main>
+        <div class="buscador-box">
+            <span class="buscador-icono">🔎</span>
+
+            <input
+                type="search"
+                id="buscar-guias"
+                placeholder="Buscar guía, tema o problema..."
+                autocomplete="off"
+            >
+        </div>
+
+        <div
+            id="filtros-categorias"
+            class="filtros-categorias"
+        ></div>
+
+        <p id="resultado-info" class="resultado-info"></p>
+
+    </section>
+
+
+    <section id="lista-guias">
+    </section>
+
+</main>
 
 
     <!-- IMPORTANTE:
