@@ -20,8 +20,8 @@ const GUIAS = [
         ],
 
         previews: [
-            "assets/previews/math2415-exam1/preview-1.webp",
-            "assets/previews/math2415-exam1/preview-2.webp"
+            "assets/previews/math2415-exam1/preview-1.png",
+            "assets/previews/math2415-exam1/preview-2.png"
         ],
 
         nuevo: true
